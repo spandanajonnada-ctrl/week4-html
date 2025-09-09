@@ -1,0 +1,132 @@
+.main-header
+{
+    text-align: center;
+    color:blueviolet;
+    background-color: aqua;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+
+}
+.main-header.logo
+{
+    width: 55px;
+    height: 55px;
+    padding:8px 14px;
+    margin:10px 0;  
+}
+.main-header.logo img
+{
+    border-radius: 5px;
+}
+h1
+{
+    color:blue;
+}
+p{
+    color:brown;
+    text-align: center;
+}
+.bgimage
+{
+    background-image: url("../images/pandu.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+.maincomponent
+{
+    display: flex;
+    border:2px solid black;
+}
+.box
+{
+    width:550px;
+    height:250px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 2em;
+}
+#box1
+{
+    background-color:rgb(138, 43, 226);
+    transition-timing-function:linear ;
+
+    
+}
+#box2
+{
+    background-color: rgb(205, 255, 216);
+    transition-timing-function:ease-out ;
+}
+div:hover
+{
+    width:500 ;
+    height:500;
+    border-radius: 15px;
+    background-color:rgb(77, 77, 184);
+    transition:width 2s,height 2s,transform 2s;
+
+}
+#newrotate
+{
+    width:150px;
+    height:150px;
+    border-radius: 15px;
+    background-color: rgb(177, 91, 91);
+    transition:width 2s,height 2s,transform 2s;
+
+}
+#newrotate:hover
+{
+    width:500px;
+    height:500px;
+    transform:rotate(180deg);
+}
+@keyframes animid{
+    from{background-color: rgb(99, 44, 151);}
+    to{background-color: rgb(36, 36, 158);}
+}
+.animi
+{
+    width: 160px;
+    height:160px;
+    background-color: brown ;
+    animation-name:animid ;
+    animation-duration: 6s;
+}
+.scrolltext
+{
+    font-family: 'Lucida Sans';
+    font-style: italic;
+    font-size: 25px;
+    width: 3000px;
+    white-space: nowrap;
+    color:brown;
+    overflow: hidden;
+    box-sizing: border-box;
+    border:2px solid red;
+
+
+}
+@keyframes scroll-left
+{
+    from { transform: translatex(100%); }
+    to { transform: translatex(-100%);  }
+}
+.scrolltext span
+{
+    display: inline-block;
+    padding-left:100% ;
+    animation:scroll-left 5s linear infinite;
+}
+.scrollright span
+{
+    display:inline-block;
+    padding-left: 100%;
+    animation:scroll-right;
+    animation-duration: 10s;
+}
+@keyframes scroll-right{
+    from { transform:translatex(-100%); }
+    to { transform:translatex(100%); }
+}
